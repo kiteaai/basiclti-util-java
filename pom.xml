@@ -166,17 +166,18 @@
 						<version>1.7.4</version>
 						<type>jar</type>
 				</dependency>
+				<!-- JUnit 4 tests can still run; Mockito works fine on Java 17 -->
 				<dependency>
-						<groupId>org.powermock</groupId>
-						<artifactId>powermock-module-junit4</artifactId>
-						<version>${powermock.version}</version>
-						<scope>test</scope>
+					<groupId>org.mockito</groupId>
+					<artifactId>mockito-core</artifactId>
+					<version>5.11.0</version>
+					<scope>test</scope>
 				</dependency>
 				<dependency>
-						<groupId>org.powermock</groupId>
-						<artifactId>powermock-api-mockito</artifactId>
-						<version>${powermock.version}</version>
-						<scope>test</scope>
+					<groupId>org.mockito</groupId>
+					<artifactId>mockito-inline</artifactId>
+					<version>5.11.0</version>
+					<scope>test</scope>
 				</dependency>
 				<dependency>
 						<groupId>commons-io</groupId>
